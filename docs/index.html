@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241a16">
+  <meta name="description" content="کافه نارون؛ جایی برای قهوه، کتاب و خاطره. تجربه‌ای نوستالژیک از یک کافه ایرانی.">
+  <title>کافه نارون | یک فنجان خاطره</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> یک گوشه دنج، یک فنجان حال خوب <span class="announcement-sep">✳</span> هر روز از ۸ صبح تا ۱۱ شب</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="کافه نارون">
+      <span class="brand-mark">ن</span><span class="brand-copy"><strong>کافه نارون</strong><small>COFFEE · BOOKS · MEMORIES</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="باز کردن منو" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="منوی اصلی">
+      <a class="nav-link active" href="#home">خانه</a><a class="nav-link" href="#menu">منوی کافه</a><a class="nav-link" href="#story">داستان ما</a><a class="nav-link" href="#library">کتابخانه</a><a class="nav-link" href="#playlist">موسیقی</a>
+    </nav>
+    <div class="header-actions"><button class="icon-btn search-open" aria-label="جستجو">⌕</button><button class="cart-button" aria-label="سبد خرید"><span class="cart-icon">▱</span><span>سبد من</span><b class="cart-count">۰</b></button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain"></div><div class="hero-content">
+        <div class="eyebrow"><span></span> کافه‌ای برای مکث کردن</div>
+        <h1>بعضی حال‌خوب‌ها<br>با <em>یک فنجان</em> شروع می‌شن.</h1>
+        <p>عطر قهوه تازه، ورق خوردن یک کتاب قدیمی و موسیقی‌ای که انگار از خاطراتت میاد؛ به نارون خوش اومدی.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#menu">منوی کافه <span>←</span></a><a class="text-link" href="#story">قصه نارون رو بخون <span>↙</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>از دلِ روزمرگی، برای لحظه‌های ماندگار</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85" alt="فضای گرم و صمیمی کافه"></div>
+        <div class="photo-stamp"><span>EST.</span><strong>۱۴۰۲</strong><small>RASHT · IRAN</small></div>
+        <div class="floating-card"><span class="floating-icon">☕</span><span><b>امروز رو آروم‌تر زندگی کن</b><small>قهوه‌ات داره آماده می‌شه...</small></span></div>
+      </div>
+      <div class="hero-index">۰۱ <i></i> ۰۳</div>
+    </section>
+
+    <section class="ticker" aria-label="شعار کافه"><div class="ticker-track"><span>قهوه‌ی خوب</span> ✳ <span>آدم‌های دوست‌داشتنی</span> ✳ <span>کتاب‌های خواندنی</span> ✳ <span>موسیقی آرام</span> ✳ <span>قهوه‌ی خوب</span> ✳ <span>آدم‌های دوست‌داشتنی</span> ✳ <span>کتاب‌های خواندنی</span> ✳ <span>موسیقی آرام</span> ✳</div></section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> انتخاب امروز تو</div><h2>منوی <em>خوش‌عطر</em> نارون</h2></div><p>از اسپرسوی جدی تا نوشیدنی‌های گرم و دوست‌داشتنی؛<br>هر چیزی برای حالِ امروزت.</p></div>
+      <div class="menu-toolbar"><div class="filter-tabs" role="group" aria-label="دسته‌بندی منو"><button class="filter-tab active" data-filter="all">همه</button><button class="filter-tab" data-filter="coffee">قهوه</button><button class="filter-tab" data-filter="hot">نوشیدنی گرم</button><button class="filter-tab" data-filter="cold">نوشیدنی سرد</button><button class="filter-tab" data-filter="dessert">دسر</button></div><label class="menu-search"><span>⌕</span><input id="menuSearch" type="search" placeholder="چی هوس کردی؟"></label></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="coffee" data-name="لاته نارون"><div class="product-image"><img src="https://images.unsplash.com/photo- latte" alt="لاته" onerror="this.src='https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80'"><span class="product-tag">محبوب</span><button class="quick-add" data-add="latte" aria-label="افزودن لاته">+</button></div><div class="product-info"><div><h3>لاته نارون</h3><p>اسپرسو، شیر بخار داده‌شده</p></div><strong>۱۲۰ <small>تومان</small></strong></div></article>
+        <article class="product-card" data-category="coffee" data-name="آمریکانو"><div class="product-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="آمریکانو"><button class="quick-add" data-add="americano" aria-label="افزودن آمریکانو">+</button></div><div class="product-info"><div><h3>آمریکانو</h3><p>اسپرسو دبل، آب داغ</p></div><strong>۹۵ <small>تومان</small></strong></div></article>
+        <article class="product-card" data-category="hot" data-name="هات چاکلت"><div class="product-image"><img src="https://images.unsplash.com/photo-1542990253-0b8be4e4c6b9?auto=format&fit=crop&w=700&q=80" alt="هات چاکلت"><span class="product-tag">پیشنهاد نارون</span><button class="quick-add" data-add="chocolate" aria-label="افزودن هات چاکلت">+</button></div><div class="product-info"><div><h3>هات چاکلت</h3><p>شکلات تلخ، شیر، خامه</p></div><strong>۱۳۵ <small>تومان</small></strong></div></article>
+        <article class="product-card" data-category="cold" data-name="آیس لاته"><div class="product-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="آیس لاته"><button class="quick-add" data-add="iced" aria-label="افزودن آیس لاته">+</button></div><div class="product-info"><div><h3>آیس لاته</h3><p>اسپرسو، شیر سرد، یخ</p></div><strong>۱۲۵ <small>تومان</small></strong></div></article>
+        <article class="product-card" data-category="dessert" data-name="چیزکیک"><div class="product-image"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" alt="چیزکیک"><button class="quick-add" data-add="cake" aria-label="افزودن چیزکیک">+</button></div><div class="product-info"><div><h3>چیزکیک روز</h3><p>پنیر خامه‌ای، بیسکویت کره‌ای</p></div><strong>۱۵۰ <small>تومان</small></strong></div></article>
+        <article class="product-card" data-category="hot" data-name="چای دارچین"><div class="product-image"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=700&q=80" alt="چای دارچین"><button class="quick-add" data-add="tea" aria-label="افزودن چای">+</button></div><div class="product-info"><div><h3>چای دارچین</h3><p>چای ایرانی، چوب دارچین</p></div><strong>۷۵ <small>تومان</small></strong></div></article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden>چیزی با این مشخصات پیدا نکردیم. یه چیز دیگه امتحان کن ☕</div>
+      <div class="menu-foot"><span>مواد تازه، تهیه‌شده با عشق.</span><span>قیمت‌ها به هزار تومان هستند.</span></div>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85" alt="قهوه تازه در فضای کافه"><div class="story-caption">یک فنجان، هزار قصه.</div></div><div class="story-copy"><div class="eyebrow"><span></span> قصه‌ای به رنگ چوب و قهوه</div><h2>نارون فقط<br>یک <em>کافه</em> نیست.</h2><p>ما نارون رو ساختیم برای وقت‌هایی که دلت می‌خواد دنیا کمی آهسته‌تر بچرخه. جایی برای گپ‌های طولانی، قرارهای ساده، کتاب‌های نیمه‌تمام و فنجون‌هایی که زود خالی می‌شن.</p><p>اینجا هر گوشه یه خاطره داره؛ شاید خاطره بعدی، مال تو باشه.</p><a class="text-link" href="#visit">منتظرتیم <span>←</span></a><div class="story-signature">با مهر، خانواده نارون <span>✳</span></div></div></section>
+
+    <section class="section library-section" id="library"><div class="section-heading"><div><div class="eyebrow"><span></span> برای چند صفحه دور شدن</div><h2>کتابخانه‌ی <em>کوچک ما</em></h2></div><p>قهوه‌ات رو بردار، یه گوشه بشین<br>و چند صفحه از جهان فاصله بگیر.</p></div><div class="book-grid"><article class="book-card"><div class="book-cover cover-one"><span>چشم‌هایش</span><small>بزرگ علوی</small></div><div><h3>چشم‌هایش</h3><p>بزرگ علوی · رمان</p></div></article><article class="book-card"><div class="book-cover cover-two"><span>سمفونی<br>مردگان</span><small>عباس معروفی</small></div><div><h3>سمفونی مردگان</h3><p>عباس معروفی · رمان</p></div></article><article class="book-card"><div class="book-cover cover-three"><span>یک عاشقانه<br>آرام</span><small>نادر ابراهیمی</small></div><div><h3>یک عاشقانه آرام</h3><p>نادر ابراهیمی · عاشقانه</p></div></article><article class="book-card"><div class="book-cover cover-four"><span>ملت عشق</span><small>الیف شافاک</small></div><div><h3>ملت عشق</h3><p>الیف شافاک · رمان</p></div></article></div></section>
+
+    <section class="music-section" id="playlist"><div class="music-art"><div class="vinyl"><div class="vinyl-label">N</div></div><span class="music-spark spark-a">✳</span><span class="music-spark spark-b">♪</span></div><div class="music-copy"><div class="eyebrow"><span></span> صدای پس‌زمینه‌ی نارون</div><h2>یه کم موسیقی،<br><em>یه کم آرامش.</em></h2><p>یه پلی‌لیست کوچیک برای وقت‌هایی که حرفی برای گفتن نیست و موسیقی همه‌چیز رو می‌فهمه.</p><div class="player"><button class="play-button" id="playButton" aria-label="پخش موسیقی">▶</button><div class="track-info"><b id="trackName">A Walk Through Memory</b><small id="trackArtist">Narvan Café Playlist · Track 01</small><div class="progress"><span id="progressBar"></span></div></div><span class="track-time" id="trackTime">۰:۰۰</span></div><div class="music-hint" id="musicHint">برای پخش، دکمه رو بزن؛ صدای دمو به‌صورت نمایشی فعاله.</div></div></section>
+
+    <section class="visit-section" id="visit"><div><div class="eyebrow"><span></span> یه صندلی برای تو خالیه</div><h2>قرار بعدی‌مون<br><em>نارون؟</em></h2><p>یه سر بیا، قهوه با ما. حرف‌ها با تو.</p></div><div class="visit-details"><div><span>⌖</span><p><b>آدرس کافه</b><small>رشت، خیابان خاطره، کوچه نارون</small></p></div><div><span>◷</span><p><b>ساعت کاری</b><small>هر روز · ۸:۰۰ تا ۲۳:۰۰</small></p></div><a class="btn btn-light" href="mailto:hello@narvancafe.example">با ما در ارتباط باش <span>←</span></a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">ن</span><span class="brand-copy"><strong>کافه نارون</strong><small>COFFEE · BOOKS · MEMORIES</small></span></a><span>ساخته‌شده با عشق و عطر قهوه <b>✳</b></span><a href="#top" class="back-top">بازگشت به بالا ↑</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سبد خرید" aria-hidden="true"><div class="drawer-head"><div><small>سفارش خوشمزه‌ات</small><h3>سبد خرید</h3></div><button class="drawer-close" aria-label="بستن">×</button></div><div class="cart-items" id="cartItems"><div class="cart-empty">سبدت هنوز خالیه ☕<small>از منو یه چیزی انتخاب کن.</small></div></div><div class="cart-summary"><div><span>جمع کل</span><strong id="cartTotal">۰ تومان</strong></div><button class="btn btn-primary checkout-button" id="checkoutButton">ثبت سفارش آزمایشی <span>←</span></button><small>این نسخه نمایشی است؛ پرداخت واقعی انجام نمی‌شود.</small></div></aside>
+  <div class="search-modal" id="searchModal" aria-hidden="true"><button class="search-close" aria-label="بستن">×</button><div class="eyebrow"><span></span> دنبال چی می‌گردی؟</div><input id="globalSearch" type="search" placeholder="قهوه، کتاب، موسیقی..."><p>برای جستجو در منو، نام نوشیدنی رو بنویس.</p></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>کافه نارون رشت | سفارش آنلاین قهوه</title>
+<meta name="description" content="کافه نارون رشت؛ منوی قهوه، سفارش آنلاین، ۵ تم متفاوت و داشبورد کاربری.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body data-theme="cafe">
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/img/logo.svg" alt=""><span>کافه نارون</span></a>
+    <nav class="main" aria-label="منو اصلی">
+      <a href="#menu">منو</a><a href="#about">درباره</a><a href="#map">نقشه</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="player" role="group" aria-label="پخش‌کننده آهنگ">
+      <button class="iconbtn" id="pv" aria-label="آهنگ قبلی">⏮</button>
+      <button class="iconbtn" id="pp" aria-label="پخش">▶</button>
+      <button class="iconbtn" id="nx" aria-label="آهنگ بعدی">⏭</button>
+      <span class="song" id="song"></span>
+      <input type="range" id="vol" min="0" max="100" value="50" aria-label="صدا">
+    </div>
+    <button class="iconbtn" id="themeBtn" title="تغییر تم" aria-label="تغییر تم">🎭</button>
+    <button class="iconbtn" id="cartBtn" aria-label="سبد خرید">🛒<span class="badge hidden" id="cartN">0</span></button>
+    <button class="btn small" id="userBtn">ورود</button>
+  </div>
+</header>
+
+<div class="greet hidden" id="greet" role="status"></div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag" data-t="tagline"></span>
+        <h1 data-t="heroTitle"></h1>
+        <p data-t="heroSub"></p>
+        <a class="btn" href="#menu" data-t="cta"></a>
+        <div class="chips"><span class="chip">📍 رشت</span><span class="chip">☕ سفارش آنلاین</span><span class="chip">🎵 ۵ تم و ۵ آهنگ</span></div>
+      </div>
+      <div class="art"><img id="heroImg" src="assets/img/hero-cafe.svg" alt="تصویر کافه نارون"></div>
+    </div>
+  </section>
+
+  <section class="block" id="menu">
+    <div class="wrap">
+      <div class="sec-head"><h2 data-t="menuTitle"></h2><p data-t="menuSub"></p></div>
+      <div class="tools">
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <input class="search" id="q" type="search" placeholder="جستجو در منو…" aria-label="جستجو در منو">
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap about-grid">
+      <div class="panel"><h2 data-t="aboutTitle" style="font-family:var(--font-head);margin-bottom:10px"></h2><p data-t="aboutText"></p>
+        <div class="chips"><span class="chip">دانه‌ی تازه رست</span><span class="chip">دم‌آوری دقیق</span><span class="chip">چای شمال</span></div></div>
+      <div class="panel"><h3 style="font-family:var(--font-head);margin-bottom:8px">ساعت کاری و تماس</h3>
+        <p>همه‌روزه ۹ صبح تا ۱۲ شب (قابل تغییر در <code>assets/js/data.js</code>)</p>
+        <p style="color:var(--muted)">رشت، کافه نارون</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="map">
+    <div class="wrap">
+      <div class="sec-head"><h2 data-t="mapTitle"></h2></div>
+      <iframe class="map" id="mapFrame" title="نقشه کافه نارون رشت" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p style="margin-top:12px"><a class="btn ghost small" id="mapLink" target="_blank" rel="noopener">باز کردن در Google Maps</a></p>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap"><span data-t="footer"></span><br><small>ساخته‌شده با HTML/CSS/JS · لایسنس MIT · <span id="modeLbl"></span></small></div></footer>
+
+<!-- سبد -->
+<aside class="drawer" id="drawer" aria-label="سبد خرید">
+  <div style="display:flex;justify-content:space-between;align-items:center"><h3 data-t="cart" style="font-family:var(--font-head);font-size:1.4rem"></h3><button class="iconbtn" id="closeCart" aria-label="بستن">✕</button></div>
+  <div class="list" id="cartList"></div>
+  <div class="field"><label for="otype">نوع سفارش</label>
+    <select id="otype"><option value="dine">حضوری در کافه</option><option value="pickup">بیرون‌بر</option><option value="delivery">ارسال با پیک (رشت)</option></select></div>
+  <div class="field hidden" id="addrF"><label for="oaddr">آدرس</label><input id="oaddr" placeholder="خیابان، پلاک، واحد"></div>
+  <div class="field"><label for="onote">توضیحات</label><input id="onote" placeholder="مثلاً بدون شکر"></div>
+  <div class="total"><span>جمع</span><span id="cartTotal"></span></div>
+  <button class="btn" id="checkout" data-t="checkout"></button>
+</aside>
+
+<div id="modalRoot"></div>
+<div id="dashRoot"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/fx.js"></script>
+<script src="assets/js/music.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

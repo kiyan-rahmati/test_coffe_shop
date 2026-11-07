@@ -1,0 +1,12 @@
+.adm{max-width:1100px;margin:0 auto;padding:24px 16px 80px}
+.adm h1{font-family:var(--font-head);font-size:1.8rem}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.login{max-width:380px;margin:12vh auto}
+table.t{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.t th,.t td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:right;vertical-align:middle}
+.t th{background:var(--surface2);font-size:.9rem}
+.t input[type=text],.t input[type=number],.t select{width:100%;padding:6px 8px;border:1px solid var(--border);background:var(--bg);border-radius:6px}
+.t input[type=number]{min-width:110px}
+.t img{width:44px;height:44px;border-radius:8px;object-fit:cover}
+.note{background:var(--surface2);padding:10px 14px;border-radius:var(--radius);margin-bottom:14px;color:var(--muted);font-size:.92rem}
+.scroll{overflow-x:auto}
